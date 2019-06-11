@@ -1,0 +1,19 @@
+[package]
+name = "juniper_serde"
+version = "0.1.0"
+authors = ["Jean Mertz <jean@mertz.fm>"]
+license = "MIT/Apache-2.0"
+description = "Serde support for Juniper types"
+repository = "https://github.com/JeanMertz/juniper_serde"
+keywords = ["juniper", "serde"]
+readme = "README.md"
+include = ["Cargo.toml", "src/**/*.rs", "README.md", "LICENSE-APACHE", "LICENSE-MIT"]
+edition = "2018"
+
+[dependencies]
+serde = "1"
+juniper = "0.12"
+
+[dev-dependencies]
+serde_json = "1"
+serde = { version = "1", features = ["derive"] }
